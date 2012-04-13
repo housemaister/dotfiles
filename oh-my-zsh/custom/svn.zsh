@@ -1,4 +1,3 @@
-
 # svn function to extend colored svn diff output
 function svn() {
     case "$1" in
@@ -27,29 +26,4 @@ function svn() {
             ;;
     esac
 }
-
-asdf() {
-    echo 'Overiding switch to dvorak keyboard layout!! You do not want to write dvorak!'
-}
-
-psgrep() {
-    ps faux | grep "$@" | grep -v grep
-}
-
-openvpn() {
-    echo 'Starting openvpn service'
-    Start openvpn
-}
-
-bindkey '5D' emacs-backward-word
-bindkey '5C' emacs-forward-word
-
-alias -s pdf=evince
-alias -s py=scite
-alias -g L="| less"
-alias -g PG="| grep -v grep"
-
-PATH="/var/lib/gems/1.8/bin:$PATH"
-
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"  # This loads RVM
 

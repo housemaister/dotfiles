@@ -4,3 +4,4 @@ if [[ -n "$DISPLAY" ]] ; then
 fi
 
 export PYTHONSTARTUP=~/.pystartup
+
